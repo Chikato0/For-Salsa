@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body {
+    background-image: url(img/back.avif);
+    background-color: #eaeaea;
+    color: black;
+}
+
+.container  {
+    position: relative;
+    background-color: white;
+    width: 800px;
+    margin: auto;
+}
+.header {
+    padding: 20px;
+}
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 8px;
+}
+a {
+    text-decoration: none;
+    color: salmon;
+    padding: 3px
+}
+a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+.hero {
+    height: 250px;
+    background-image: url(img/hero.png);
+    background-size: cover;
+    background-position: 0 -250px;
+    border-top: solid 5px lightskyblue;
+    border-bottom: solid 5px tomato;
+}
+.content {
+    /* border: 2px solid red; */
+    padding: 5px;
+}
+.penulis {
+    font-size: 13px;
+    margin-top: 5px;
+}
+p {
+    margin-top: 5px;
+    font-size: 17px;
+}
+.footer {
+    display: flex;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.851);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.footer p {
+    text-align: center;
+}
+button {
+    cursor: pointer;
+    position: fixed;
+    right: 10%;
+    top: 80%;
+    font-size: 30px;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: none;
+    background-image: url(img/tombol.png);
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 350px;
+    }
+    button {
+        z-index: 100px;
+    }
+}
